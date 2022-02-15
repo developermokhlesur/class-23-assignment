@@ -1,89 +1,209 @@
-/*** Nessesary CSS Start From Here***/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 img{
     max-width: 100%;
-}
-ul li{
-    list-style: none;
 }
 a{
     text-decoration: none;
 }
-/*** Nessesary CSS End Here***/
-/*** Header CSS Start From Here ***/
+ul li{
+    list-style: none;
+}
+/*** Header Section Start ***/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    margin-bottom: -5px;
+}
+a{
+    text-decoration: none;
+}
+/*** Header Section Start ***/
 header{
-    background: black;
-    display: flex;
-    padding: 10px 20%;
-    justify-content: center;
+    background: black;  
+    padding: 10px 15%;
+    display: flex;  
+    justify-content: space-between;
     align-items: center;
 }
-header .header-logo{
-    width: 40%;
+
+header .header-logo{   
+    flex-basis: 35%;
 }
-header .header-logo img{
+header .header-logo img{  
     width: 100px;
 }
+
 header .header-menu{
-    width: 60%;
+   flex-basis: 65%;
 }
+
 header .header-menu ul{
     display: flex;
     justify-content: space-between;
 }
 header .header-menu ul li a{
     color: #fff;
-    font-size:18px ;
+    font-size: 20px;
+    position: relative;
+}
+header .header-menu ul li a::after{
+    content: "";
+    position: absolute;
+    top: 130%;
+    left: -15%;
+    width: 130%;
+    height: 1.5px;
+    background: #fff;
+}
+/*** Header Section End ***/
+/*** Banner Section Start ***/
+.banner{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    margin-top: 50px;
+}
+.content{
+    flex-basis: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-content: flex-start;
+   
+}
+.line-1{
+    width: 31%;
+    border: 1px solid green;
+    height: 200px;
+    margin-bottom: 30px;
+}
+.line-1 span{
+    padding: 20px 35px;
+    color:#fff;
+    background: red;
+    display: inline-block;
+}
+.line-1.box-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line-1.box-2{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.line-1.con-1{
+    flex-basis: 25%;
+}
+.line-1.con-2{
+    flex-basis: 40%;
+}
+.line-1.con-3{
+    flex-basis: 30%;
+}
+.line-1 p{
+    padding: 20px;
+}
+.b1 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.b1 ul li{
+    background: red;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid green;
+}
+.b2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 20px;
+}
+.b2 ul li{
+    background: red;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid green;
+    width: 20%;
+}
+.b3{
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+
+}
+.b3 span{
+    padding: 8px 20px;
+    border: 2px solid green;
+
+}
+.btn-1{
+    align-self: flex-start;
+    justify-content: flex-start;
+}
+.btn-2{
+    align-self: center;
+    justify-content: center;
+}
+.btn-3{
+    align-self: flex-end;
+    justify-content:flex-end;
+}
+.sidebar{
+    flex-basis: 25%;
+    background:#d2d2d2 ;
+    border-left: 2px solid tomato;
+    padding: 20px;
+    height: 100vh;
+}
+.sidebar img{
+    width: 80%;
+    margin: 30px 0;
+}
+/*** Banner Section End ***/
+/*** Footer Section Start ***/
+footer{
+    background: black;
+    margin-top: 30px;
+    padding: 15px 0;
+    margin-bottom: 10px;
+
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+   
+}
+footer ul li{
+    width: 7%;
+}
+footer ul li a{
+    color: #fff;
     position: relative;
 
 }
-header .header-menu ul li a::after {
+footer ul li a::after{
     content: "";
     position: absolute;
-    top: 136%;
-    left: 0;
-    width: 110%;
-    height: 1px;
+    top: 130%;
+    left: -15%;
+    width: 130%;
+    height: 1.5px;
     background: #fff;
 }
-/*** Header CSS End Here ***/
-/*** Banner CSS Start From Here */
-.banner{
-    margin-top: 50px;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.content-side .first-div{
-    display: flex;
-    justify-content: space-evenly;
-    justify-items: start;
-    flex-direction: row;
-}
-.div-1{
-    width: 31%;
-    height: 200px;
-    border: 1px solid green;
-  
-}
-.content-side{
-    width: 78%;
-}
-.sidebar{
-    width: 20%;
-    border-left: 2px solid red;
-    background: #d2d2d2;
-    padding: 20px;
-    height: 90vh;
-}
-.sidebar img{
-    width: 90%;
-    margin: 30px 0;
-}
-/*** Banner CSS End Here */
+/*** Footer Section End ***/
